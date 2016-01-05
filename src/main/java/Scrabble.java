@@ -43,7 +43,7 @@ public class Scrabble {
       char result = userCharacters[i];
       stringOfChar = Character.toString(result);
       Integer letterValue = scrabbleKey.get(stringOfChar);
-      scrabbleScore = scrabbleScore + letterValue;
+      scrabbleScore += letterValue;
     }
     return scrabbleScore;
 
