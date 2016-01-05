@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class ScrabbleTest {
 
-  // @Test
-  // public void scrabbleScore_returnsAScrabbleScoreForALetter_1() {
-  //   Scrabble app = new Scrabble();
-  //   Integer score = 1;
-  //   assertEquals(score, app.scrabbleScore("a"));
-  // }
+  @Test
+  public void scrabbleScore_returnsAScrabbleScoreForALetter_1() {
+    Scrabble app = new Scrabble();
+    Integer score = 1;
+    assertEquals(score, app.scrabbleScore("a"));
+  }
 
   // @Test
   // public void scrabbleScore_returnsAString_a() {
@@ -35,16 +35,11 @@ public class ScrabbleTest {
   }
 
   @Test
-    public void scrabbleScore_returnsDifferentTotalScore_5() {
+    public void scrabbleScore_returnsDifferentTotalScore_4() {
       Scrabble app = new Scrabble();
-      Integer total = 5;
+      Integer total = 4;
       assertEquals(total, app.scrabbleScore("cat"));
     }
 
-    @Test
-      public void scrabbleScore_returnsTotalForTwoWords_10() {
-        Scrabble app = new Scrabble();
-        Integer total = 10;
-        assertEquals(total, app.scrabbleScore("Cat dog"));
-      }
+
   }
