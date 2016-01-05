@@ -8,16 +8,26 @@ public class Scrabble {
     String[] scrabbleLetters = {"a"};
     Integer[] scrabbleValues = {1};
 
-    char[] userCharacters = userWord.toCharArray();
-    char result = userCharacters[0];
-    String charString = Character.toString(result);
 
-    return charString;
-    // String[] userLetter = {};
-    // for (String characterLetter : Character.toString(userCharacters)){
-    //   userLetter.add(characterLetter);
-    // }
+    // char result = userCharacters[0];
+    // String charString = Character.toString(result);
+    // String[] userLetters = {};
+    String stringOfChar = "";
+    for (Integer i = 0 ; i < userWord.length(); i++){
+      char[] userCharacters = userWord.toCharArray();
+      char result = userCharacters[i];
+      stringOfChar = Character.toString(result);
+      // return stringOfChar;
+    }
+
+    // for (Integer i = 0; i < userWord.length ; i++)
     // String[] stringUserChars = String.valueOf(userCharacters);
+
+
+
+    return stringOfChar;
+
+
 
 
     // Integer total = 0;
