@@ -1,16 +1,6 @@
 # Scrabble
-## Plain English Specs
-| Behavior | Input Example | Output Example |
-| --- | :---:  | :---: |
-| Scrabble returns a score for a letter | "a" | 1 |
-| Scrabble returns a score for multiple letters | "aa" | 2 |
-| Scrabble returns a score for word | "cat" | 5 |
-| Scrabble returns a score for two words | "Cat dog" | 10 |
 
-
-# _Scrabble_
-
-#### _An App to Score Your Scrabble Words, 1/5/2015_
+#### An App to Score Your Scrabble Words, 1/5/2015
 
 #### By _**Kassidy Douglas**_
 
