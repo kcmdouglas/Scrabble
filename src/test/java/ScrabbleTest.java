@@ -1,5 +1,6 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.util.ArrayList;
 
 public class ScrabbleTest {
 
@@ -10,10 +11,19 @@ public class ScrabbleTest {
   //   assertEquals(score, app.scrabbleScore("a"));
   // }
 
+  // @Test
+  // public void scrabbleScore_returnsAString_a() {
+  //   Scrabble app = new Scrabble();
+  //   String letter = "a";
+  //   assertEquals(letter, app.scrabbleScore("a"));
+  // }
+
   @Test
-  public void scrabbleScore_returnsAString_a() {
+  public void scrabbleScore_returnsAnArrayList_aa() {
     Scrabble app = new Scrabble();
-    String letter = "a";
-    assertEquals(letter, app.scrabbleScore("a"));
+    ArrayList<String> expectedArray = new ArrayList<String>();
+    expectedArray.add("a");
+    expectedArray.add("a");
+    assertEquals(expectedArray, app.scrabbleScore("aa"));
   }
 }

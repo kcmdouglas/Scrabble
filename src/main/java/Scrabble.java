@@ -1,9 +1,10 @@
 import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Scrabble {
   public static void main(String[] args) {}
 
-  public String scrabbleScore(String userWord) {
+  public Object scrabbleScore(String userWord) {
 
     String[] scrabbleLetters = {"a"};
     Integer[] scrabbleValues = {1};
@@ -11,13 +12,13 @@ public class Scrabble {
 
     // char result = userCharacters[0];
     // String charString = Character.toString(result);
-    // String[] userLetters = {};
+    ArrayList<String> userLetters = new ArrayList<String>();
     String stringOfChar = "";
     for (Integer i = 0 ; i < userWord.length(); i++){
       char[] userCharacters = userWord.toCharArray();
       char result = userCharacters[i];
       stringOfChar = Character.toString(result);
-      // return stringOfChar;
+      userLetters.add(stringOfChar);
     }
 
     // for (Integer i = 0; i < userWord.length ; i++)
@@ -25,7 +26,7 @@ public class Scrabble {
 
 
 
-    return stringOfChar;
+    return userLetters;
 
 
 
