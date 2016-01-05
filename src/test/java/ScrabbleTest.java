@@ -35,9 +35,9 @@ public class ScrabbleTest {
   }
 
   @Test
-    public void scrabbleScore_returnsDifferentTotalScore_4() {
+    public void scrabbleScore_returnsDifferentTotalScore_5() {
       Scrabble app = new Scrabble();
-      Integer total = 4;
+      Integer total = 5;
       assertEquals(total, app.scrabbleScore("cat"));
     }
 
