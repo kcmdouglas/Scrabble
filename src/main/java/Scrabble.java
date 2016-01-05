@@ -5,7 +5,7 @@ public class Scrabble {
 
   public Integer scrabbleScore(String userWord) {
     HashMap<String, Integer> scrabbleKey = new HashMap<String, Integer>();
-    scrabbleKey.put("a", 0);
+    scrabbleKey.put("a", 1);
 
     return scrabbleKey.get(userWord);
   }
