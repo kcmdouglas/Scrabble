@@ -21,6 +21,11 @@ public class Scrabble {
       userLetters.add(stringOfChar);
     }
 
+    // Integer scrabbleScore = 0
+    // for (Integer i = 0 ; i < userLetters.length(); i++){
+    //
+    // }
+
     // for (Integer i = 0; i < userWord.length ; i++)
     // String[] stringUserChars = String.valueOf(userCharacters);
 

@@ -26,4 +26,11 @@ public class ScrabbleTest {
     expectedArray.add("a");
     assertEquals(expectedArray, app.scrabbleScore("aa"));
   }
+
+  @Test
+  public void scrabbleScore_returnsTotalScore_2() {
+    Scrabble app = new Scrabble();
+    Integer total = 2
+    assertEquals(total, app.scrabbleScore("aa"));
+  }
 }
