@@ -11,22 +11,6 @@ public class ScrabbleTest {
     assertEquals(score, app.scrabbleScore("a"));
   }
 
-  // @Test
-  // public void scrabbleScore_returnsAString_a() {
-  //   Scrabble app = new Scrabble();
-  //   String letter = "a";
-  //   assertEquals(letter, app.scrabbleScore("a"));
-  // }
-
-  // @Test
-  // public void scrabbleScore_returnsAnArrayList_aa() {
-  //   Scrabble app = new Scrabble();
-  //   ArrayList<String> expectedArray = new ArrayList<String>();
-  //   expectedArray.add("a");
-  //   expectedArray.add("a");
-  //   assertEquals(expectedArray, app.scrabbleScore("aa"));
-  // }
-
   @Test
   public void scrabbleScore_returnsTotalScore_2() {
     Scrabble app = new Scrabble();
@@ -40,11 +24,11 @@ public class ScrabbleTest {
       Integer total = 5;
       assertEquals(total, app.scrabbleScore("cat"));
     }
-    
+
     @Test
-      public void scrabbleScore_returnsTotalForTwoWords_9() {
+      public void scrabbleScore_returnsTotalForTwoWords_10() {
         Scrabble app = new Scrabble();
-        Integer total = 9;
+        Integer total = 10;
         assertEquals(total, app.scrabbleScore("Cat dog"));
       }
 
