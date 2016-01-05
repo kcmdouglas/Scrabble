@@ -40,6 +40,12 @@ public class ScrabbleTest {
       Integer total = 5;
       assertEquals(total, app.scrabbleScore("cat"));
     }
-
+    
+    @Test
+      public void scrabbleScore_returnsTotalForTwoWords_9() {
+        Scrabble app = new Scrabble();
+        Integer total = 9;
+        assertEquals(total, app.scrabbleScore("Cat dog"));
+      }
 
   }
