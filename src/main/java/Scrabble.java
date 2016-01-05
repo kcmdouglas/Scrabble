@@ -5,6 +5,8 @@ public class Scrabble {
   public static void main(String[] args) {}
 
   public Integer scrabbleScore(String userWord) {
+    userWord = userWord.replaceAll("\\s+", "");
+    userWord = userWord.toLowerCase();
 
     HashMap<String, Integer> scrabbleKey = new HashMap<String, Integer>();
     scrabbleKey.put("a", 1);
@@ -34,36 +36,16 @@ public class Scrabble {
     scrabbleKey.put("y", 4);
     scrabbleKey.put("z", 10);
 
-    // char result = userCharacters[0];
-    // String charString = Character.toString(result);
-    String[] userLetters = [];
     String stringOfChar = "";
+    Integer scrabbleScore = 0;
     for (Integer i = 0 ; i < userWord.length(); i++){
       char[] userCharacters = userWord.toCharArray();
       char result = userCharacters[i];
       stringOfChar = Character.toString(result);
-      userLetters.add(stringOfChar);
+      Integer letterValue = scrabbleKey.get(stringOfChar);
+      scrabbleScore = scrabbleScore + letterValue;
     }
+    return scrabbleScore;
 
-    Integer scrabbleScore = 0
-    for (Integer i = 0 ; i < userLetters.length(); i++){
-
-    }
-
-    // for (Integer i = 0; i < userWord.length ; i++)
-    // String[] stringUserChars = String.valueOf(userCharacters);
-
-
-
-    return userLetters;
-
-
-
-
-    // Integer total = 0;
-    //   for (Integer value : scrabbleKey.get(stringUserChars)) {
-    //     total = total + value;
-    //   }
-    // return total;
   }
 }
